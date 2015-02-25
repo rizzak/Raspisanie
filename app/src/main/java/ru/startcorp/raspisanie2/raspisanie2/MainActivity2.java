@@ -20,8 +20,8 @@ public class MainActivity2 extends Activity {
          /*Находим WebView элемент по его id*/
         mWebView = (WebView) findViewById(R.id.webView);
         mWebView.getSettings().setJavaScriptEnabled(true);
-//        mWebView.setScrollbarFadingEnabled(true);
-//        mWebView.setScrollBarStyle(View.SCROLLBARS_INSIDE_OVERLAY);
+        mWebView.setScrollbarFadingEnabled(true);
+        mWebView.setScrollBarStyle(View.SCROLLBARS_INSIDE_OVERLAY);
         mWebView.getSettings().setCacheMode(WebSettings.LOAD_DEFAULT);
         // указываем страницу загрузки
         Bundle extras = getIntent().getExtras();
